@@ -57,15 +57,6 @@ function onSubmitRequest(event) {
   }
 }
 
-function renderImagesCard(data) {
-  gallery.innerHTML = galleryTemplateMarkup(data);
-}
-
-function onFetchError(error) {
-  Notiflix.Notify.failure('Oops, something went wrong');
-  console.log(error.message);
-}
-
 function onLoadMore() {
   page += 1;
 
@@ -88,4 +79,13 @@ function onLoadMore() {
     .finally(() => {
       form.reset();
     });
+}
+
+function renderImagesCard(data) {
+  gallery.innerHTML = galleryTemplateMarkup(data);
+}
+
+function onFetchError(error) {
+  Notiflix.Notify.failure('Oops, something went wrong');
+  console.log(error.message);
 }

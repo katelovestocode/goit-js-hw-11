@@ -1,5 +1,6 @@
 /**
- * webformatURL - link to a small image for the list of cards.
+ * 
+webformatURL - link to a small image for the list of cards.
 largeImageURL - link to a large image.
 tags - line with image description. Suitable for the alt attribute.
 likes - number of likes.
